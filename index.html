@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="style.css">
+    <title>Javascript Assignment</title>
+
+</head>
+
+<body>
+
+    <div class="main">
+        <div>
+            <input type="Number">
+            <button onclick="Action()">click here</button>
+        </div>
+    </div>
+
+    <script>
+        function Action() {
+            let input = document.querySelector('input').value;
+            let IntNumber = Number(input);
+            const multiplicationTable = (num) => {
+                for (let i = 1; i <= 10; i++) {
+                    const result = num * i;
+                    console.log(`${num} x ${i} = ${result}`)
+                }
+            }
+            multiplicationTable(IntNumber)
+            document.querySelector('input').value = "";
+        }
+
+
+    </script>
+</body>
+
+</html>
