@@ -15,13 +15,18 @@
 
 <body>
 
-    <div class="main">
-        <div>
-            <input type="Number">
-            <button onclick="Action()">click here</button>
-        </div>
-    </div>
+    <div class="hero">
+        <div class="main">
+            <div>
+                <input type="Number"
+                       placeholder="Enter a Number">
+                <button onclick="Action()">Click here</button>
+            </div>
 
+            <h3>Show the result in console</h3>
+        </div>
+
+    </div>
     <script>
         function Action() {
             let input = document.querySelector('input').value;
